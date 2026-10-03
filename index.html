@@ -1,29 +1,9 @@
-/* Contact Section */
-<head>
-    <style>
-            .contact {
-            background-image: 
-                radial-gradient(circle at 20% 80%, rgba(59, 130, 246, 0.1) 0%, transparent 50%),
-                radial-gradient(circle at 80% 20%, rgba(168, 85, 247, 0.08) 0%, transparent 50%),
-                rgba(248, 250, 252, 0.95);
-            position: relative;
-        }
-
-        .contact::before {
-                content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-image: url("data:image/svg+xml...");
-    pointer-events: none;
-}
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ling Li - PhD Student & Technology Innovation Researcher</title>
+    <title>Ling Li - PhD Student &amp; Technology Innovation Researcher</title>
     <style>
         * {
             margin: 0;
@@ -66,7 +46,7 @@
 
         /* Header */
         header {
-            background-image: rgba(255, 255, 255, 0.95);
+            background: rgba(255, 255, 255, 0.95);
             backdrop-filter: blur(20px);
             position: fixed;
             top: 0;
@@ -330,26 +310,26 @@
             z-index: -1;
             animation: imageBorder 4s ease-in-out infinite alternate;
         }
-        /* 专门控制个人照片的样式 */
-    .profile-photo {
-    width: 100% !important;
-    max-width: 350px !important;
-    height: 400px !important;
-    object-fit: cover !important;
-}
-    border-radius: 15px; /* 圆角，整体设计保持一致 */
-    display: block;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1); /* 增加一点阴影感 */
-    position: relative;
-    z-index: 2;
-}
+        /* Profile photo */
+        .profile-photo {
+            width: 100%;
+            max-width: 350px;
+            height: auto;
+            aspect-ratio: 4 / 5;
+            object-fit: cover;
+            border-radius: 15px;
+            display: block;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            position: relative;
+            z-index: 2;
+        }
 
-/* 调整照片容器，确保它和 3D 边框动画对齐 */
-.about-image {
-    display: flex;
-    justify-content: center; /* 居中显示照片 */
-    position: relative;
-}
+        /* Keep the portrait centered inside its decorative frame. */
+        .about-image {
+            display: flex;
+            justify-content: center;
+            position: relative;
+        }
         @keyframes imageBorder {
             0% { transform: rotate(0deg) scale(1); }
             100% { transform: rotate(2deg) scale(1.02); }
@@ -820,7 +800,7 @@
             <div class="container">
                 <div class="hero-content fade-in">
                     <h1>Ling Li 李玲</h1>
-                    <p class="subtitle">PhD Student & Technology Innovation Researcher</p>
+                    <p class="subtitle">PhD Student &amp; Technology Innovation Researcher</p>
                     <p class="description">
                         Exploring the intersection of technology and innovation, with a passion for 
                         transforming ideas into impactful solutions that shape the future.
@@ -909,7 +889,7 @@
                     <div class="experience-item">
                         <div class="experience-header">
                             <div>
-                                <div class="experience-title">HR - Asia Regional Org Mgt, L&D, COE People Analysis</div>
+                                <div class="experience-title">HR - Asia Regional Org Mgt, L&amp;D, COE People Analysis</div>
                                 <div class="experience-company">Dreame, DSM, Porsche, UPS</div>
                             </div>
                             <div class="experience-period">2018 - 2021, 2024</div>
@@ -924,7 +904,7 @@
 
         <section id="research" class="research">
             <div class="container">
-                <h2 class="section-title">Research & Projects</h2>
+                <h2 class="section-title">Research &amp; Projects</h2>
                 <div class="research-grid">
                      <div class="research-card">
                         <h3>Innovation Policy and Innovation Network Comparison — China vs. the U.S. (Dissertation Oriented)</h3>
@@ -1025,7 +1005,7 @@ AI Technology Policy Comparison: A Content Analysis Based Policy Review and Fore
                             <span>💼</span>
                             <span>LinkedIn</span>
                         </a>
-                        <a href="https://scholar.google.com/citations?user=JKOHkGsAAAAJ&hl=zh-CN&oi=ao" class="contact-link" target="_blank">
+                        <a href="https://scholar.google.com/citations?user=JKOHkGsAAAAJ&amp;hl=zh-CN&amp;oi=ao" class="contact-link" target="_blank">
                             <span>📚</span>
                             <span>Scholar</span>
                         </a>
